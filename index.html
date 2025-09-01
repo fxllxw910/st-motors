@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://iimg.su/s/17/wVXcvOZWYJcOIfEJU8l9PEcBTLqSbNoChvsb06Zc.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ST Motors - Профессиональный автосервис в Челябинске</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://iimg.su/s/17/BoMu4w7TphYsH5YdJyVUWRKHgRnEH9LNYeWyjKXA.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .subaru-blue {
+            background-color: #0033A0;
+        }
+        
+        .subaru-red {
+            background-color: #CC0000;
+        }
+
+        h1 {
+            color: white;
+            font-size: 3em;
+            -webkit-text-stroke: 5px black;
+        }
+
+        h2 {
+            color: white;
+            font-size: 3em;
+            -webkit-text-stroke: 2px black;
+        }
+
+        .fix-stroke {
+        paint-order: stroke fill;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-800 text-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="https://iimg.su/s/17/wVXcvOZWYJcOIfEJU8l9PEcBTLqSbNoChvsb06Zc.png" alt="ST Motors Logo" class="h-8 mr-2">
+                        <span class="text-xl font-bold text-gray-900">ST Motors</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-white-900 hover:text-white-800 px-3 py-2 text-sm font-medium" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">О нас</a>
+                    <a href="#services" class="text-white-900 hover:text-white-800 px-3 py-2 text-sm font-medium" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">Услуги</a>
+                    <a href="#contact" class=".fix-stroke text-white-900 hover:text-white-800 px-3 py-2 text-sm font-medium" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Контакты</a>
+
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-blue-800 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" onclick="toggleMobileMenu()">
+                        <span class="sr-only">Меню</span>
+                        <i id="menu-icon" class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-100" onclick="closeMobileMenu()">О нас</a>
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-100" onclick="closeMobileMenu()">Услуги</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-100" onclick="closeMobileMenu()">Контакты</a>
+            </div>
+        </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-image flex items-center justify-center text-center text-white">
+        <div class="px-4 py-16 max-w-3xl mx-auto fade-in">
+            <h1 class="fix-stroke text-4xl md:text-6xl font-bold mb-4">
+                ST Motors</h1>
+            <h2 class="fix-stroke text-xl md:text-2xl mb-8">Автосервис, где Subaru живёт вечно ⭐</p>
+            <p class="text-lg mb-8">Профессиональный ремонт и обслуживание автомобилей в Челябинске. Мы знаем толк в надёжности — как и вы, если выбрали Subaru!</p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="fix-stroke text-2xl md:text-4xl font-bold mb-4">О нас</h1>
+                <div class="mt-4 w-20 h-1 bg-blue-800 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://cdn.poehali.dev/files/c929c4a3-6ec6-4672-a5b5-3332544bbc66.jpg" alt="Subaru STI в автосервисе ST Motors" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div>
+                    <p class="text-lg text-white mb-6">Мы не просто чиним машины — мы возвращаем им жизнь! Как говорится, «Love is what makes a Subaru, a Subaru», а мы добавляем к этому профессионализм.</p>
+                    <p class="text-lg text-white mb-6">За годы работы мы стали экспертами в области автомобильного ремонта. Symmetrical All-Wheel Drive — это не просто слова для нас!</p>
+                    <p class="text-lg text-white mb-6">Наши мастера знают каждый винтик. Мы работаем с душой, потому что понимаем — ваш автомобиль это не просто транспорт.</p>
+                    <p class="text-lg text-white mb-6">Даём гарантию на все работы. Confidence in Motion — наш девиз, и мы за него отвечаем!</p>
+                    <div class="mt-8">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0 bg-blue-100 rounded-full p-2">
+                                <i class="fas fa-check-circle text-blue-800 text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-lg font-medium text-white">Опытные мастера</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0 bg-blue-100 rounded-full p-2">
+                                <i class="fas fa-check-circle text-blue-800 text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-lg font-medium text-white">Оригинальные запчасти</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-blue-100 rounded-full p-2">
+                                <i class="fas fa-check-circle text-blue-800 text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-lg font-medium text-white">Гарантия на все работы</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="fix-stroke text-2xl md:text-4xl font-bold mb-4">Наши услуги</h1>
+                <div class="mt-4 w-20 h-1 bg-blue-800 mx-auto"></div>
+                <p class="mt-4 max-w-2xl text-xl text-white mx-auto">Полный спектр услуг для вашего железного коня. От планового ТО до капитального ремонта.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center justify-center w-16 h-16 bg-blue-900 rounded-full mb-4 mx-auto">
+                            <i class="fas fa-laptop-code text-blue-300 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-white mb-3">Компьютерная диагностика</h3>
+                        <p class="text-gray-300 text-center">Найдём проблему быстрее, чем вы скажете 'WRX STI'! Полная проверка всех систем автомобиля.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center justify-center w-16 h-16 bg-blue-900 rounded-full mb-4 mx-auto">
+                            <i class="fas fa-cogs text-blue-300 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-white mb-3">Ремонт двигателей</h3>
+                        <p class="text-gray-300 text-center">Boxer-движки для нас как родные! Капитальный и текущий ремонт двигателей любой сложности.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center justify-center w-16 h-16 bg-blue-900 rounded-full mb-4 mx-auto">
+                            <i class="fas fa-exchange-alt text-blue-300 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-white mb-3">Ремонт трансмиссии</h3>
+                        <p class="text-gray-300 text-center">Ремонт МКПП, АКПП, вариаторов. Lineartronic или что угодно — всё по плечу нашим мастерам!</p>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center justify-center w-16 h-16 bg-blue-900 rounded-full mb-4 mx-auto">
+                            <i class="fas fa-bolt text-blue-300 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-white mb-3">Электрооборудование</h3>
+                        <p class="text-gray-300 text-center">Ремонт электрооборудования, автосигнализаций, мультимедиа систем. Решаем любые электрические проблемы.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center justify-center w-16 h-16 bg-blue-900 rounded-full mb-4 mx-auto">
+                            <i class="fas fa-spray-can text-blue-300 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-white mb-3">Кузовные работы</h3>
+                        <p class="text-gray-300 text-center">Рихтовка, покраска, полировка. Вернём вашему авто заводской вид после любых повреждений.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center justify-center w-16 h-16 bg-blue-900 rounded-full mb-4 mx-auto">
+                            <i class="fas fa-calendar-check text-blue-300 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-white mb-3">Техническое обслуживание</h3>
+                        <p class="text-gray-300 text-center">Плановое обслуживание по регламенту. Профилактика — лучшее лечение для вашего автомобиля!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+        <!-- Lifehack Section -->
+    <section class="py-8 bg-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-lightbulb text-yellow-300 text-2xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-bold text-white">Лайфхак</h3>
+                        <p class="mt-2 text-gray-300">Чтобы ваш Subaru жил долго и счастливо, проходите ТО вовремя и слушайте звуки, которые он издаёт. Машина всегда подскажет, когда ей нужна помощь!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="fix-stroke text-2xl md:text-4xl font-bold mb-4">Контакты</h1>
+                <div class="mt-4 w-20 h-1 bg-blue-800 mx-auto"></div>
+                <p class="mt-4 max-w-2xl text-xl text-white mx-auto">Готовы доверить нам своего железного друга? Звоните, пишите, приезжайте!</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Contact Info -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md border border-gray-700">
+
+                    
+                    <div class="flex items-start mb-6">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-map-marker-alt text-blue-300 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-white font-medium">Адрес</p>
+                            <p class="text-gray-300">Челябинск, ГСК № 8 Автомобилист, гараж 2932Е</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start mb-6">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-phone-alt text-blue-300 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-white font-medium">Телефон</p>
+                            <p class="text-gray-300"><a href="tel:+79823697970">+7 (982) 369-79-70</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-clock text-blue-300 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-white font-medium">Режим работы</p>
+                            <p class="text-gray-300">Пн-вс: 10:00 - 20:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Map -->
+                <div class="md:col-span-2 bg-gray-800 rounded-lg overflow-hidden min-h-[400px] border border-gray-700">
+                    <div class="w-full h-full">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A43a02f429f8608e7e36aeed25324a5bae83d965ae845dfaa8da3eb54b8c382d1&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="py-16 bg-gray-800 text-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold sm:text-4xl">Записаться на ремонт</h2>
+                <div class="mt-4 w-20 h-1 bg-white mx-auto"></div>
+                <p class="mt-4 text-xl">Заполните форму или позвоните нам напрямую</p>
+            </div>
+            
+            <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium">Ваше имя</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:ring-white focus:border-white text-white placeholder-gray-300">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium">Телефон</label>
+                        <input type="tel" id="phone" name="phone" required class="mt-1 block w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:ring-white focus:border-white text-white placeholder-gray-300">
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="car" class="block text-sm font-medium">Марка и модель автомобиля</label>
+                    <input type="text" id="car" name="car" required class="mt-1 block w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:ring-white focus:border-white text-white placeholder-gray-300">
+                </div>
+                
+                <div>
+                    <label for="service" class="block text-sm font-medium">Какая услуга требуется?</label>
+                    <select id="service" name="service" class="mt-1 block w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:ring-white focus:border-white text-white">
+                        <option>Диагностика</option>
+                        <option>Техническое обслуживание</option>
+                        <option>Ремонт двигателя</option>
+                        <option>Ремонт трансмиссии</option>
+                        <option>Электрика</option>
+                        <option>Кузовные работы</option>
+                        <option>Другое</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="message" class="block text-sm font-medium">Дополнительная информация</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:ring-white focus:border-white text-white placeholder-gray-300"></textarea>
+                </div>
+                
+                <div class="flex items-center">
+                    <input id="agree" name="agree" type="checkbox" class="h-4 w-4 text-blue-900 focus:ring-white border-blue-300 rounded">
+                    <label for="agree" class="ml-2 block text-sm">Я согласен на обработку персональных данных</label>
+                </div>
+                
+                <div>
+                    <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white-800 bg-gray-600 hover:bg-grey-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition duration-300">
+                        Отправить заявку
+                    </button>
+                </div>
+            </form>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white py-12">
+         
+        <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+                <p>© 2023 ST Motors. Все права защищены.</p>
+
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-800 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Form submission
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const phone = document.getElementById('phone').value;
+                const car = document.getElementById('car').value;
+                const service = document.getElementById('service').value;
+                const message = document.getElementById('message').value;
+                
+                const botToken = '8338074625:AAFtNOPKyvumJspQhwJuJmlmHhLh0R4UL0A';
+                const chatId = '@sf5_subaruclub_74';
+                const messageThreadId = 10752;
+                const text = `Новая заявка из сайта:\n\nИмя: ${name}\nТелефон: ${phone}\nАвтомобиль: ${car}\nУслуга: ${service}\nСообщение: ${message}`;
+                
+                fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        chat_id: chatId,
+                        message_thread_id: messageThreadId,
+                        text: text
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.ok) {
+                        alert('Ваша заявка принята! Мы свяжемся с вами в ближайшее время.');
+                        form.reset();
+                    } else {
+                        alert('Ошибка при отправке заявки. Пожалуйста, попробуйте позже или свяжитесь с нами по телефону.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Ошибка при отправке заявки. Пожалуйста, попробуйте позже или свяжитесь с нами по телефону.');
+                });
+            });
+        }
+        
+        // Mobile menu functions
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        }
+        
+        function closeMobileMenu() {
+            document.getElementById('mobile-menu').classList.add('hidden');
+            document.getElementById('menu-icon').classList.remove('fa-times');
+            document.getElementById('menu-icon').classList.add('fa-bars');
+        }
+    </script>
+</body>
+</html>
